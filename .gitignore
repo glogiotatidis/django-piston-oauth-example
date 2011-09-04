@@ -3,3 +3,4 @@ local_settings.py
 *.sqlite
 env/
 .backup/
+foo/db
