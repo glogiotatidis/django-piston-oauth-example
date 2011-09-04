@@ -1,0 +1,50 @@
+* About
+
+This is /working/ example of a Django service with Piston API authenticated with OAuth.
+
+I spend quite some time trying to find a working combination of django
+piston oauth, as everything seemed broken one way or another. This is
+a working django project, ready to be installed on your machine so you
+can play and understand oauth with django and piston.
+
+I used [[https://github.com/pbs-education/django-piston][piston from pbs education]] (btw read their wonderful
+presentation on [[http://www.slideshare.net/tomatohater/dcpython-architecture-at-pbs-jun-7-2011][how to build Web APIS]]) and replaced /oauth.py/ and
+/authentication.py/ using the ones from [[http://git.gnome.org/browse/snowy/tree/][snowy]].
+
+I did some modifications to remove csrf checks on oauth calls.
+
+Finally I fetched /oauth_client.py/ from this example
+[[https://github.com/clemesha/django-piston-oauth-example]] to test your
+oauth authentication.
+
+* Install
+
+1. git clone git://github.com/glogiotatidis/django-piston-oauth-example.git # to clone
+2. cd django-piston-oauth-example
+3. bash scripts/build_environment.sh # to download and install django and dependencies
+4. source env/bin/activate # to activate the environment
+5. cd foo
+6. pythom manage.py syncdb # create dbs, create superuser
+7. python manage.py runserver
+8. login to admin panel through http://localhost:8000/admin/
+9. Create a new Consumer with Key: testkey and Secret: testsecret
+10. You are ready to go!
+
+* Try
+
+1. Make sure that server runs
+2. Make sure that you have activated the environment
+3. Run oauth_client.py and follow the instructions
+4. You should end up with a oauth_token and a oauth_token_secret
+
+
+* Comments
+
+Please if you find something missing or something that can be done in
+a better way, please let me know or even better submit a patch!
+
+* Nice related links
+
+ 1. http://blog.carduner.net/2010/01/26/django-piston-and-oauth/
+ 2. http://www.slideshare.net/tarequeh/api-design-security-in-django
+ 3. http://stackoverflow.com/questions/1813630/any-good-tutorials-on-using-oauth-with-piston/3395494#3395494
