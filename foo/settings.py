@@ -1,4 +1,6 @@
 # Django settings for foo project.
+import os
+here = lambda path: os.path.join(os.path.realpath(os.path.dirname(__file__)), path)
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
@@ -106,6 +108,7 @@ TEMPLATE_DIRS = (
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
+    here('./templates/'),
 )
 
 INSTALLED_APPS = (
@@ -144,3 +147,5 @@ LOGGING = {
         },
     }
 }
+
+OAUTH_CALLBACK_VIEW = "api.views.request_token_ready"
