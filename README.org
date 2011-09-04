@@ -45,6 +45,6 @@ a better way, please let me know or even better submit a patch!
 
 * Nice related links
 
- 1. http://blog.carduner.net/2010/01/26/django-piston-and-oauth/
- 2. http://www.slideshare.net/tarequeh/api-design-security-in-django
- 3. http://stackoverflow.com/questions/1813630/any-good-tutorials-on-using-oauth-with-piston/3395494#3395494
+ 1. [[http://blog.carduner.net/2010/01/26/django-piston-and-oauth/]]
+ 2. [[http://www.slideshare.net/tarequeh/api-design-security-in-django]]
+ 3. [[http://stackoverflow.com/questions/1813630/any-good-tutorials-on-using-oauth-with-piston/3395494#3395494]]
