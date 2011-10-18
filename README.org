@@ -43,6 +43,17 @@ oauth authentication.
 Please if you find something missing or something that can be done in
 a better way, please let me know or even better submit a patch!
 
+* Two legged authentication
+
+[[http://github.com/guglielmo][Guglielmo]] provided an example for two-legged authentication. Whether
+you have a two legged or three legged auth, depends on how you build
+the request.
+
+Passing an empty access token key and secret, builds a two-legged
+authentication request. Example using twisted oauth-proxy plugin
+
+twistd -n oauth_proxy --consumer-key testkey --consumer-secret testsecret --token "" --token-secret ""
+
 * Nice related links
 
  1. [[http://blog.carduner.net/2010/01/26/django-piston-and-oauth/]]
